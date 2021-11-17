@@ -98,7 +98,19 @@
             </div>
         </div>
 
+        <br>
+        <br>
+        <br>
 
+
+        <div class="container">
+            <div class="row list-memo">
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
 
     </div>
     <footer class="footer-04">
@@ -175,6 +187,29 @@
     </footer>
 
 
+
+    <script>
+
+        $.getJSON("memoryList.json", function (data) {
+            let list = data
+            let html = ""
+            for (let i = 0; i < list.length; i++) {
+                let item = list[i]
+                html += `
+                <div class="col-12 col-sm-10 col-md-4 p-2">
+                    <div class="card " style="width: 100%;">
+                        <img class="card-img-top" src="${item.url}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.title}</h5>
+                            <p class="card-text">${item.text}</p>
+                        </div>
+                    </div>
+                </div>
+                `
+            }
+            $(".list-memo").html(html)
+        })
+    </script>
     <!--
         Bootstrap CDNS importation
     -->
