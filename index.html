@@ -109,6 +109,27 @@
 
     </div>
 
+    <div style="background-color: gainsboro;width: 100vw">
+        <br>
+        <div class="container text-center">
+            <h1 class="text-primary h2">Why Memories</h1>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-10 col-md-6">
+                    <div class="row memory-1">
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 ">
+                    <div class="row memory-2"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <br>
+    <br>
     <div>
         <div class="container">
             <h1 class="h3 text-center text-primary">
@@ -180,6 +201,8 @@
         <br>
         <br>
     </div>
+
+
     <footer class="footer-04">
         <div class="container">
             <div class="row">
@@ -275,6 +298,42 @@
                 `
             }
             $(".list-memo").html(html)
+        })
+
+        $.getJSON("whyMemories.json", function (data) {
+            // console.log(data)
+            let one = data.slice(0, 5)
+            let two = data.slice(5, 10)
+            let letMemOne = ""
+            let letMemTwo = ""
+
+            for (let i = 0; i < 5; i++) {
+                letMemOne += `
+                <div class="col-4">
+                        <img src=${one[i].url} alt="" style="width: 55px; height: 55px;">
+                    </div>
+                    <div class="col-8">
+                       
+                        <p class="text-left fw-light" style="font-size:20px" >${one[i].text}</p>
+                    </div>
+                    `
+            }
+
+
+            $(".memory-1").html(letMemOne)
+            for (let i = 0; i < 5; i++) {
+                letMemTwo += `
+                <div class="col-4">
+                        <img src=${two[i].url} alt="" style="width: 55px; height: 55px;">
+                    </div>
+                    <div class="col-8">
+                       
+                        <p class="text-left fw-light" style="font-size:20px" >${two[i].text}</p>
+                    </div>
+                `
+            }
+            $(".memory-2").html(letMemTwo)
+            console.log(two)
         })
     </script>
     <!--

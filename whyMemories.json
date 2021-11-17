@@ -1,0 +1,43 @@
+[
+  {
+    "url": "./images/why-memories/website.png",
+    "text": "Website makes memory creation and managament easy."
+  },
+  {
+    "url": "./images/why-memories/mobile.png",
+    "text": "Mobile app lets you visit and add memories when and where it suits you."
+  },
+  {
+    "url": "./images/why-memories/download.png",
+    "text": "Bulk upload adds albums of photos and videos in a single click."
+  },
+
+  {
+    "url": "./images/why-memories/workflow.png",
+    "text": "Automatic sequencing ensures no memory is ever out of place."
+  },
+  {
+    "url": "./images/why-memories/key.png",
+    "text": "Vault, secured by 2-factor authentication provides unlimited space to store photos and videos, plus scans and PDFs of important documents and certificates."
+  },
+  {
+    "url": "./images/why-memories/collaborate.png",
+    "text": "Invite contributors using their email addresses, social media links, and more."
+  },
+  {
+    "url": "./images/why-memories/pin.png",
+    "text": "Invite contributors using their email addresses, social media links, and more.Pin a Memory of your choice to the top of the memorial."
+  },
+  {
+    "url": "./images/why-memories/click.png",
+    "text": "One-click slideshow turns your memories into the perfect funeral service presentation."
+  },
+  {
+    "url": "./images/why-memories/gift.png",
+    "text": "Virtual gifts allow those who can’t find the right words to express their sympathies."
+  },
+  {
+    "url": "./images/why-memories/key.png",
+    "text": "Secured by SSL encryption, so your memories are always safe."
+  }
+]
